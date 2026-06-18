@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create New User</title>
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+    <body >
+        <div class="container" >
+
+        <header >
+        <div class="header">
+            <div>
+                <a href="/index.html"><img src="/assets/header logo.png" class="headerlogo" alt="Main Logo" title="Home"/></a>
+            </div>
+
+            <div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Pages/Ourproducts.html">Our Products</a></li>
+                    <li><a href="/Pages/about.html">About</a></li>
+                    <li><a href="/Pages/contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            </div>
+             <div class="headerbutton">
+            <button ><a href="/Admin/createuser.html">Create User</a></button>
+            </div>
+            
+            <div class="settings">
+                <select> 
+                    <option selected disabled>⚙️Settings</option>
+                    <option><a href="">👤Profile</a></option>
+                    <option><a href="/Login/login.html">🔐Login/Signup</a></option>
+                    <option><a href="">👋Logout</a></option>
+                </select>
+            </div>
+            <div>
+                <img src="/assets/Profile.png" class="profileimage" alt="profile" title="Profile"/>
+                
+            </div>
+            <div class="logoutbutton">
+            <button><a href="">👋Logout</a></button>
+            </div>
+        </div>
+        </header>
+
+
+        <main>
+            <div class="sectiondiv">
+            <section>
+                <form>
+                    <div>
+                        <div class="flexdiv">
+                            <!--<div class="imagediv">
+                                <img src="/assets/login.png"/>
+                            </div>-->
+                            <div class="creatediv">
+                                <h1>Add New Product</h1>
+                                <p>Fill the details bellow to add new product</p>
+                            </div>
+                            <div class="backdiv">
+                                <button><a href="/Admin/products.html">Back to Products</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usermaindiv">
+                        
+                            <div >
+                                <div>
+                                    <h2>Basic Info</h2>
+                                </div>
+                                <hr/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Product Name</label><br/>
+                                        <input type="text" placeholder="Enter Product name" required/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label class="selectlabel">Category</label><br/>
+                                        <select required>
+                                            <option selected disabled>--Select Category--</option>
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Brand</label><br/>
+                                        <input type="text" placeholder="Enter brand name"required/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label>SKU (Stock keeping unit)</label><br/>
+                                        <input type="number" placeholder="Enter SKU"required/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div>
+                                    <div>
+                                        <label>Short Description</label><br/>
+                                        <textarea class="textarea" placeholder="Enter short description" required></textarea>
+                                    </div>
+                                    <div>
+                                        <label>Full Description</label><br/>
+                                        <textarea class="bigtextarea" placeholder="Enter Full description of the product..." required></textarea>
+                                    </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div>
+                                    <h2>Pricing & Stock</h2>
+                                    </div>
+                                    <hr/>
+                                <div class="tripleflexdiv">
+                                    <div >
+                                        <label>Price(NPR)</label><br/>
+                                        <input type="number" placeholder="Enter price in NRS" required/><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="tripleinputright">
+                                        <label>Discount(%)</label><br/>
+                                        <input type="number" placeholder="Enter Discount" required/><br/>
+                                    </div>
+                                    <div class="tripleinputright">
+                                        <label>Sale price(NPR)</label><br/>
+                                        <input type="number" placeholder="Enter sale price" required/><br/>
+                                    </div>
+                                </div>
+                                    <br/>
+                                    <div class="tripleflexdiv">
+                                    <div >
+                                        <label>Cost Price (NPR)</label><br/>
+                                        <input type="number" placeholder="Enter cost price" required/><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="tripleinputright">
+                                        <label>Stock Quntity</label><br/>
+                                        <input type="number" placeholder="Enter stock quantity" required/><br/>
+                                    </div>
+                                    <div class="tripleinputright">
+                                        <label>Low Stock Alert</label><br/>
+                                        <input type="number" placeholder="Enter alert quantity" required/><br/>
+                                    </div>
+                                </div>
+                                    <br/>
+                                    
+                                    <div>
+                                        <h2>Profile Picture</h2>
+                                    </div>
+                                    <hr/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Product Image</label><br/>
+                                        <input class="choosefile" type="file" required/><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="imagepreview">
+                                        Image preview
+                                    </div>
+                                </div>
+                                    <br/>
+                                    <div>
+                                        <h2>Additional Info</h2>
+                                    </div>
+                                    <hr/>
+                                <div class="flexdiv">
+                                    <div class="sectionleft">
+                                        <label>Status</label><br/>
+                                        <select required>
+                                            <option selected disabled>--Select Status--</option>
+                                            <option>Active</option>
+                                            <option>Deactive</option>
+                                        </select><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="checkboxinputright">
+                                        <label>Featured Products</label><br/>
+                                        <div class="checkboxflex">
+                                        <input class="checkboxinput" type="checkbox"required/>
+                                        <label>Mark as featured product</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <br/>
+                                    <div class="flexdiv">
+                                    <div>
+                                        <label>Weight (KG)</label><br/>
+                                        <input type="number" placeholder="Enter weight" required/><br/>
+                                    </div>
+                                    <div class="inputright">
+                                        <label>Dimensions(L*W*H)</label><br/>
+                                        <input type="number" placeholder="Enter dimensions(e.g . 10*5*2 cm)" required/><br/>
+                                    </div>
+                                    </div>
+                                    <br/>
+                                
+                            </div>
+                            <div class="flexdiv">
+                                    <div class="reset">
+                                        <button type="reset">Reset</button>
+                                    </div>
+                                    <div class="submit">
+                                        <button  type="submit">+ Add Product</button>
+                                    </div>
+                                </div>
+                </form>
+                    </div>
+            </section>
+            </div>
+
+
+        </main>
+
+<br/><hr/>
+        <footer >
+            <div class="footer">
+                 <div class="footerimagediv">
+                <img src="/assets/footer logo.png"/>
+            </div>
+            
+
+            <div>
+                <ul>
+                    <li><a href="">Affiliate</a></li><br/>
+                    <li><a href="/Pages/Ourproducts.html">Our Products</a></li><br/>
+                    <li><a href="/Pages/about.html">About</a></li><br/>
+                    <li><a href="/Pages/contact.html">Contact us</a></li><br/>
+                </ul>
+            </div>
+            <div>
+               
+                <ul>
+                    <li><a href="">Privacy Policy</a></li><br/>
+                    <li><a href="">Terms and Services</a></li><br/>
+                    <li><a href="">Disclaimer</a></li><br/>
+                    <li><a href="">Cookie Policy</a></li><br/>
+                </ul>
+            </div>
+            <div>
+                <p><b>Step Into Style, Walk With Confidence.</b></p>
+            </div>
+           
+            <br/>
+            
+</div>
+            <div class="copyright">
+                <p>@Sultan Raja Ranabhat -2026</p>
+            </div>
+
+
+        </footer>
+
+        </div>
+    </body>
+</html>

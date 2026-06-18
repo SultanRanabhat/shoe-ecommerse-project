@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create New User</title>
+        <link rel="stylesheet" href="/style.css"/>
+    </head>
+    <body >
+        <div class="container" >
+
+        <header >
+        <div class="header">
+            <div>
+                <a href="/index.html"><img src="/assets/header logo.png" class="headerlogo" alt="Main Logo" title="Home"/></a>
+            </div>
+
+            <div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Pages/Ourproducts.html">Our Products</a></li>
+                    <li><a href="/Pages/about.html">About</a></li>
+                    <li><a href="/Pages/contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="headerbutton">
+            <button ><a href="/Admin/addproduct.html">Add Product</a></button>
+            </div>
+            
+            <div class="settings">
+                <select> 
+                    <option selected disabled>⚙️Settings</option>
+                    <option><a href="">👤Profile</a></option>
+                    <option><a href="/Login/login.html">🔐Login/Signup</a></option>
+                    <option><a href="">👋Logout</a></option>
+                </select>
+            </div>
+            <div>
+                <img src="/assets/Profile.png" class="profileimage" alt="profile" title="Profile"/>
+                
+            </div>
+            <div class="logoutbutton">
+            <button><a href="">👋Logout</a></button>
+            </div>
+        </div>
+        </header>
+
+
+        <main>
+            <div class="sectiondiv">
+            <section>
+                <form>
+                    <div>
+                        <div class="flexdiv">
+                            <div class="imagediv">
+                                <img src="/assets/login.png"/>
+                            </div>
+                            <div class="creatediv">
+                                <h1>Create New User</h1>
+                                <p>Fill the details bellow to create a new user account</p>
+                            </div>
+                            <div class="userbackdiv">
+                                <button><a href="/Admin/users.html">Back to users</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usermaindiv">
+                        
+                            <div >
+                                <div>
+                                    <h2>Personal Info</h2>
+                                </div>
+                                <hr/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Full Name</label><br/>
+                                        <input type="text" placeholder="Enter full name" required/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label>Username</label><br/>
+                                        <input type="text" placeholder="Enter username"required/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Email</label><br/>
+                                        <input type="email" placeholder="Enter email"required/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label>Phone Number</label><br/>
+                                        <input type="tel" placeholder="Enter number"required/>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Date of birth</label><br/>
+                                        <input type="date" placeholder="Enter D.O.B"required/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label class="selectlabel">Gender</label><br/>
+                                        <select required>
+                                            <option selected disabled>--Select Gender--</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <div>
+                                    <h2>Account Info</h2>
+                                    </div>
+                                    <hr/>
+                                <div class="flexdiv">
+                                    <div >
+                                        <label>Password</label><br/>
+                                        <input type="password" placeholder="Enter password" required/><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label>Password</label><br/>
+                                        <input type="password" placeholder="Confirm password" required/><br/>
+                                    </div>
+                                </div>
+                                    <br/>
+                                <div class="flexdiv">
+                                    <div class="sectionleft">
+                                        <label>Role</label><br/>
+                                        <select required>
+                                            <option selected disabled>--Select Role--</option>
+                                            <option>Admin</option>
+                                            <option>Editor</option>
+                                            <option></option>
+                                        </select><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label class="selectlabel">Status</label><br/>
+                                        <select required>
+                                            <option selected disabled>--Status--</option>
+                                            <option>Active</option>
+                                            <option>Deactive</option>
+                                        </select><br/>
+                                    </div>
+                                </div>
+                                    <br/>
+                                    <div>
+                                        <h2>Additional Info</h2>
+                                    </div>
+                                    <hr/>
+                                <div class="flexdiv">
+                                    <div class="sectionleft">
+                                        <label>Department</label><br/>
+                                        <select required>
+                                            <option selected disabled>--Select Department--</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="inputright">
+                                        <label>Designation</label><br/>
+                                        <input type="text" placeholder="Enter designation" required/><br/>
+                                    </div>
+                                </div>
+                                    <br/>
+                                    <div>
+                                        <label>Address</label><br/>
+                                        <textarea class="textarea" placeholder="Enter address" required></textarea><br/>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <h2>Profile Picture</h2>
+                                    </div>
+                                    <hr/>
+                                <div class="flexdiv">
+                                    <div>
+                                        <label>Profile Image</label><br/>
+                                        <input class="choosefile" type="file" required/><br/>
+                                    </div>
+                                    <br/>
+                                    <div class="imagepreview">
+                                        Image preview
+                                    </div>
+                                </div>
+                                    <br/>
+                                
+                            </div>
+                            <div class="flexdiv">
+                                    <div class="reset">
+                                        <button type="reset">Reset</button>
+                                    </div>
+                                    <div class="submit">
+                                        <button  type="submit">+ Create User</button>
+                                    </div>
+                                </div>
+                </form>
+                    </div>
+            </section>
+            </div>
+
+
+        </main>
+
+<br/><hr/>
+        <footer >
+            <div class="footer">
+                 <div class="footerimagediv">
+                <img src="/assets/footer logo.png"/>
+            </div>
+            
+
+            <div>
+                <ul>
+                    <li><a href="">Affiliate</a></li><br/>
+                    <li><a href="/Pages/Ourproducts.html">Our Products</a></li><br/>
+                    <li><a href="/Pages/about.html">About</a></li><br/>
+                    <li><a href="/Pages/contact.html">Contact us</a></li><br/>
+                </ul>
+            </div>
+            <div>
+               
+                <ul>
+                    <li><a href="">Privacy Policy</a></li><br/>
+                    <li><a href="">Terms and Services</a></li><br/>
+                    <li><a href="">Disclaimer</a></li><br/>
+                    <li><a href="">Cookie Policy</a></li><br/>
+                </ul>
+            </div>
+            <div>
+                <p><b>Step Into Style, Walk With Confidence.</b></p>
+            </div>
+           
+            <br/>
+            
+</div>
+            <div class="copyright">
+                <p>@Sultan Raja Ranabhat -2026</p>
+            </div>
+
+
+        </footer>
+
+        </div>
+    </body>
+</html>
