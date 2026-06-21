@@ -17,14 +17,14 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="/index.html">Home</a></li>
-                    <li><a href="/products.html">Our Products</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact us</a></li>
+                    <li><a href="/Pages/Ourproducts.html">Our Products</a></li>
+                    <li><a href="/Pages/about.html">About</a></li>
+                    <li><a href="/Pages/contact.html">Contact us</a></li>
                 </ul>
             </nav>
             </div>
             <div class="headerbutton">
-            <button ><a href="/signup.html">🔐Signup</a></button>
+            <button ><a href="/Admin/users.html">Switch to Users</a></button>
             </div>
             
             <div class="settings">
@@ -51,14 +51,14 @@
                 <table class="table">
                     <div class="userflexdiv">
                         <div>
-                            <img src="/assets/login.png"/>
+                            <img src="/assets/product.png"/>
                         </div>
                         <div>
-                            <h1>Users</h1>
-                            <p>List of users using our system</p>
+                            <h1>Products</h1>
+                            <p>List of all products in your store</p>
                         </div>
                         <div class="addbutton">
-                            <button><a href="/Admin/createuser.html">+ Add New User</a></button>
+                            <button><a href="/Admin/addproduct.html">+ Add New Product</a></button>
                         </div>
                     </div>
                     <hr/>
@@ -69,17 +69,18 @@
                         </div>
                         <div>
                             <select>
-                                <option>All roles</option>
-                                <option>Admin</option>
-                                <option>Teacher</option>
-                                <option>Student</option>
+                                <option>All Categories</option>
+                                <option>Electronics</option>
+                                <option>Bags</option>
+                                <option>Shoes</option>
                             </select>
                         </div>
                         <div>
                             <select>
                                 <option>All status</option>
                                 <option>Active</option>
-                                <option>Inactive</option>
+                                <option>Low stock</option>
+                                <option>Out of stock</option>
                             </select>
                         </div>
                         <div class="userresetbutton">
@@ -91,12 +92,12 @@
                         <div>
                             <tr>
                                 <th>#</th>
-                                <th>User</th>
-                                <th>Email</th>
-                                <th>Role</th>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
                                 <th>Status</th>
-                                <th>Joined On</th>
-                                <th>Last Login</th>
+                                <th>Added On</th>
                                 <th>Actions</th>
                             </tr>
                         </div>
@@ -106,18 +107,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        John Doe<br/>@johndoe
+                                        Smart Watch<br/>SKU: SW-001
                                         </div>
                                     </div>
                                 </td>
-                                <td>john.doe@example.com</td>
-                                <td>Admin</td>
+                                <td>Electronics</td>
+                                <td>Rs.4999</td>
+                                <td>45</td>
                                 <td>Active</td>
-                                <td>01 May 2024</td>
-                                <td>20 May 2024,10 :30 AM </td>
+                                <td>20 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -127,18 +128,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        Sarah Johnson<br/>@sarahjohnson
+                                        Headphones<br/>SKU: WH-OO2
                                         </div>
                                     </div>
                                 </td>
-                                <td>sarah.johnson@example.com</td>
-                                <td>Teacher</td>
+                                <td>Electronics</td>
+                                <td>RS.7999</td>
+                                <td>32</td>
                                 <td>Active</td>
-                                <td>03 May 2024</td>
-                                <td>20 May 2024,09:15 AM </td>
+                                <td>19 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -148,18 +149,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        Michael Brown<br/>@michaelbrown
+                                        Laptop Bag<br/>SKU: LB-003
                                         </div>
                                     </div>
                                 </td>
-                                <td>michael.brown@example.com</td>
-                                <td>Student</td>
+                                <td>Bags</td>
+                                <td>RS.2999</td>
+                                <td>18</td>
                                 <td>Active</td>
-                                <td>05 May 2024</td>
-                                <td>20 May 2024,08:45 PM </td>
+                                <td>18 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -169,18 +170,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        Emily Davis<br/>@emilydavis
+                                        Running Shoes<br/>SKU: RS-004
                                         </div>
                                     </div>
                                 </td>
-                                <td>emily.davis@example.com</td>
-                                <td>Teacher</td>
-                                <td>Inactive</td>
-                                <td>07 May 2024</td>
-                                <td>10 May 2024,11:20 AM </td>
+                                <td>Footwear</td>
+                                <td>RS.5999</td>
+                                <td>50</td>
+                                <td>Active</td>
+                                <td>10 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -190,18 +191,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        William Wilson<br/>@williamwilson
+                                        Coton T-shirt<br/>SKU: TS-005
                                         </div>
                                     </div>
                                 </td>
-                                <td>william.wilson@example.com</td>
-                                <td>Student</td>
+                                <td>Apparel</td>
+                                <td>RS.1299</td>
+                                <td>70</td>
                                 <td>Active</td>
-                                <td>10 May 2024</td>
-                                <td>20 May 2024, 07:50 AM </td>
+                                <td>22 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -211,18 +212,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        Olivia Martinez<br/>@oliviamartinez
+                                        Water Bottle<br/>SKU: WB-006
                                         </div>
                                     </div>
                                 </td>
-                                <td>olivia.martinez@example.com</td>
-                                <td>Student</td>
+                                <td>Accessories</td>
+                                <td>RS.999</td>
+                                <td>50</td>
                                 <td>Active</td>
-                                <td>12 May 2024</td>
-                                <td>19 May 2024,05:30 PM </td>
+                                <td>19 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -232,18 +233,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        James Anderson<br/>@jamesanderson
+                                        Leather Wallet<br/>SKU: LW-007
                                         </div>
                                     </div>
                                 </td>
-                                <td>jamesanderson@example.com</td>
-                                <td>Admin</td>
-                                <td>Active</td>
-                                <td>15 May 2024</td>
-                                <td>20 May 2024,09:00AM </td>
+                                <td>Accessories</td>
+                                <td>RS.599</td>
+                                <td>10</td>
+                                <td>Low Stock</td>
+                                <td>14 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -253,18 +254,18 @@
                                 <td>
                                     <div class="tdflexdiv">
                                         <div>
-                                        <img src="/assets/Profile.png"/>
+                                        <img src="/assets/watch.jpg"/>
                                         </div>
                                         <div class="namediv">
-                                        Sophia Thomas<br/>@sophiathomas
+                                        Coffee Mug<br/>SKU: CM-008
                                         </div>
                                     </div>
                                 </td>
-                                <td>sophiathomas@example.com</td>
-                                <td>Student</td>
-                                <td>Inactive</td>
-                                <td>18 May 2024</td>
-                                <td>15 May 2024,04:10 PM </td>
+                                <td>Home & Kitchen</td>
+                                <td>RS.799</td>
+                                <td>0</td>
+                                <td>Out of stock</td>
+                                <td>13 May 2024</td>
                                 <td><button><img src=""/></button><button><img src=""/></button></td>
                             </tr>
                         </div>
@@ -287,9 +288,9 @@
             <div>
                 <ul>
                     <li><a href="">Affiliate</a></li><br/>
-                    <li><a href="/products.html">Our Products</a></li><br/>
-                    <li><a href="">About</a></li><br/>
-                    <li><a href="">Contact us</a></li><br/>
+                    <li><a href="/Pages/Ourproducts.html">Our Products</a></li><br/>
+                    <li><a href="/Pages/about.html">About</a></li><br/>
+                    <li><a href="/Pages/contact.html">Contact us</a></li><br/>
                 </ul>
             </div>
             <div>

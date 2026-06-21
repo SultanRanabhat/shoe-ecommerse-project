@@ -3,6 +3,9 @@
     width: 350px;
     margin: 50px;
 }
+.header .headerbutton,.settings,.profileimage,.logoutbutton{
+    margin-left: auto;
+}
 .headerlogo{
     height: 80px;
     width: 80px;
@@ -21,9 +24,11 @@
 }
 
 
-.herosection{
+.herosection img{
 
     width: 100%;
+    height: auto;
+    margin: 0;
 }
 .header{
     display: flex;
@@ -35,7 +40,8 @@
 .navbar ul{
     display: flex;
     list-style: none;
-    margin-right: 550px;
+    margin-right: 560px;
+    
     
 
 
@@ -43,6 +49,8 @@
 .navbar li{
     padding: 20px;
     text-decoration: none;
+    
+    
 
 }
 
@@ -63,14 +71,18 @@
 .container .headerbutton button{
     background-color: #ff9326;
     border: 0;
-    margin-top: 38px;
+    margin-top: 42px;
+    margin-left: auto;
+}
+.headerbutton{
+    margin-left: auto;
 }
 .container .headerbutton a{
     text-decoration: none;
     color: black;
 }
 .container .logoutbutton button{
-     background-color: #ff9326;
+    background-color: #ff9326;
     border: 0;
     margin-top: 35px;
     margin-left: 10px;
